@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="17.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <CustomBuild Include="D:\HR Estimation\Real-time HR\SeetaFace2Engine\build\CMakeFiles\452f3f6d9039b1c07500b1da8655d7b2\INSTALL_force.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="CMake Rules">
+      <UniqueIdentifier>{92BF2FFF-3FB2-3090-9FC9-3A643EBA89D4}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>

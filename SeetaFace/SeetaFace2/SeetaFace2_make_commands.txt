@@ -1,0 +1,8 @@
+cd "D:\\HR Estimation\\SeetaFace\\SeetaFace2\\build"
+
+cmake ..  -G "Visual Studio 17 2022"  -DCMAKE_INSTALL_PREFIX=install  -DCMAKE_BUILD_TYPE=Release  -DBUILD_EXAMPLE=ON
+
+cmake --build . --config Release
+
+cmake --build . --config Release --target install
+

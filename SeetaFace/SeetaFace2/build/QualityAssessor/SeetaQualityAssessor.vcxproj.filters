@@ -1,0 +1,31 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="17.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="D:\HR Estimation\SeetaFace\SeetaFace2\QualityAssessor\src\ClarityQuality.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\HR Estimation\SeetaFace\SeetaFace2\QualityAssessor\src\PoseQuality.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\HR Estimation\SeetaFace\SeetaFace2\QualityAssessor\src\QualityAssessor.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\HR Estimation\SeetaFace\SeetaFace2\QualityAssessor\seeta\ImageProcess.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\HR Estimation\SeetaFace\SeetaFace2\QualityAssessor\seeta\common_alignment.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\HR Estimation\SeetaFace\SeetaFace2\QualityAssessor\seeta\graphics2d.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="D:\HR Estimation\SeetaFace\SeetaFace2\QualityAssessor\CMakeLists.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{09A7DF12-ADF9-3C04-8146-DF802E53BD69}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>

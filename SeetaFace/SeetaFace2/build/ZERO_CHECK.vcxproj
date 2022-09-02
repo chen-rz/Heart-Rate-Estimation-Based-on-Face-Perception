@@ -1,0 +1,174 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="17.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <PreferredToolArchitecture>x64</PreferredToolArchitecture>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ResolveNugetPackages>false</ResolveNugetPackages>
+  </PropertyGroup>
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="MinSizeRel|x64">
+      <Configuration>MinSizeRel</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="RelWithDebInfo|x64">
+      <Configuration>RelWithDebInfo</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{6942BC43-38B4-3ADB-BB35-4E2F7486D7F9}</ProjectGuid>
+    <Keyword>Win32Proj</Keyword>
+    <WindowsTargetPlatformVersion>10.0.19041.0</WindowsTargetPlatformVersion>
+    <Platform>x64</Platform>
+    <ProjectName>ZERO_CHECK</ProjectName>
+    <VCProjectUpgraderObjectName>NoUpgrade</VCProjectUpgraderObjectName>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>Utility</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v143</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>Utility</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v143</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'" Label="Configuration">
+    <ConfigurationType>Utility</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v143</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'" Label="Configuration">
+    <ConfigurationType>Utility</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v143</PlatformToolset>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <_ProjectFileVersion>10.0.20506.1</_ProjectFileVersion>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">$(Platform)\$(Configuration)\$(ProjectName)\</IntDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Release|x64'">$(Platform)\$(Configuration)\$(ProjectName)\</IntDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">$(Platform)\$(Configuration)\$(ProjectName)\</IntDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">$(Platform)\$(Configuration)\$(ProjectName)\</IntDir>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <Midl>
+      <AdditionalIncludeDirectories>%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <Midl>
+      <AdditionalIncludeDirectories>%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">
+    <Midl>
+      <AdditionalIncludeDirectories>%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">
+    <Midl>
+      <AdditionalIncludeDirectories>%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <CustomBuild Include="D:\HR Estimation\SeetaFace\SeetaFace2\build\CMakeFiles\8c1e20f8bb0c839052a598b277a33aa7\generate.stamp.rule">
+      <UseUtf8Encoding>Always</UseUtf8Encoding>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Checking Build System</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">setlocal
+"D:\Program Files\CMake\bin\cmake.exe" "-SD:/HR Estimation/SeetaFace/SeetaFace2" "-BD:/HR Estimation/SeetaFace/SeetaFace2/build" --check-stamp-list CMakeFiles/generate.stamp.list --vs-solution-file "D:/HR Estimation/SeetaFace/SeetaFace2/build/SeetaFace.sln"
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">D:\HR Estimation\SeetaFace\SeetaFace2\CMakeLists.txt;D:\HR Estimation\SeetaFace\SeetaFace2\FaceDetector\CMakeLists.txt;D:\HR Estimation\SeetaFace\SeetaFace2\FaceDetector\FaceDetector.pc.in;D:\HR Estimation\SeetaFace\SeetaFace2\FaceLandmarker\CMakeLists.txt;D:\HR Estimation\SeetaFace\SeetaFace2\FaceLandmarker\SeetaFaceLandmarker.pc.in;D:\HR Estimation\SeetaFace\SeetaFace2\FaceRecognizer\CMakeLists.txt;D:\HR Estimation\SeetaFace\SeetaFace2\FaceRecognizer\FaceRecognizer.pc.in;D:\HR Estimation\SeetaFace\SeetaFace2\FaceTracker\CMakeLists.txt;D:\HR Estimation\SeetaFace\SeetaFace2\FaceTracker\FaceTracker.pc.in;D:\HR Estimation\SeetaFace\SeetaFace2\QualityAssessor\CMakeLists.txt;D:\HR Estimation\SeetaFace\SeetaFace2\QualityAssessor\QualityAssessor.pc.in;D:\HR Estimation\SeetaFace\SeetaFace2\SeetaFace.pc.in;D:\HR Estimation\SeetaFace\SeetaFace2\SeetaNet\CMakeLists.txt;D:\HR Estimation\SeetaFace\SeetaFace2\SeetaNet\SeetaNet.pc.in;D:\HR Estimation\SeetaFace\SeetaFace2\build\CMakeFiles\3.24.1\CMakeCCompiler.cmake;D:\HR Estimation\SeetaFace\SeetaFace2\build\CMakeFiles\3.24.1\CMakeCXXCompiler.cmake;D:\HR Estimation\SeetaFace\SeetaFace2\build\CMakeFiles\3.24.1\CMakeRCCompiler.cmake;D:\HR Estimation\SeetaFace\SeetaFace2\build\CMakeFiles\3.24.1\CMakeSystem.cmake;D:\HR Estimation\SeetaFace\SeetaFace2\cmake\cmake_uninstall.cmake.in;D:\HR Estimation\SeetaFace\SeetaFace2\example\CMakeLists.txt;D:\HR Estimation\SeetaFace\SeetaFace2\example\crop_face\CMakeLists.txt;D:\HR Estimation\SeetaFace\SeetaFace2\example\crop_face\UserTemplate.xml;D:\HR Estimation\SeetaFace\SeetaFace2\example\points81\CMakeLists.txt;D:\HR Estimation\SeetaFace\SeetaFace2\example\points81\UserTemplate.xml;D:\HR Estimation\SeetaFace\SeetaFace2\example\search\CMakeLists.txt;D:\HR Estimation\SeetaFace\SeetaFace2\example\search\UserTemplate.xml;D:\HR Estimation\SeetaFace\SeetaFace2\example\tracking\CMakeLists.txt;D:\HR Estimation\SeetaFace\SeetaFace2\example\tracking\UserTemplate.xml;D:\Program Files\CMake\share\cmake-3.24\Modules\BasicConfigVersion-AnyNewerVersion.cmake.in;D:\Program Files\CMake\share\cmake-3.24\Modules\CMakeCInformation.cmake;D:\Program Files\CMake\share\cmake-3.24\Modules\CMakeCXXInformation.cmake;D:\Program Files\CMake\share\cmake-3.24\Modules\CMakeCheckCompilerFlagCommonPatterns.cmake;D:\Program Files\CMake\share\cmake-3.24\Modules\CMakeCommonLanguageInclude.cmake;D:\Program Files\CMake\share\cmake-3.24\Modules\CMakeGenericSystem.cmake;D:\Program Files\CMake\share\cmake-3.24\Modules\CMakeInitializeConfigs.cmake;D:\Program Files\CMake\share\cmake-3.24\Modules\CMakeLanguageInformation.cmake;D:\Program Files\CMake\share\cmake-3.24\Modules\CMakePackageConfigHelpers.cmake;D:\Program Files\CMake\share\cmake-3.24\Modules\CMakeRCInformation.cmake;D:\Program Files\CMake\share\cmake-3.24\Modules\CMakeSystemSpecificInformation.cmake;D:\Program Files\CMake\share\cmake-3.24\Modules\CMakeSystemSpecificInitialize.cmake;D:\Program Files\CMake\share\cmake-3.24\Modules\CheckCCompilerFlag.cmake;D:\Program Files\CMake\share\cmake-3.24\Modules\CheckCSourceCompiles.cmake;D:\Program Files\CMake\share\cmake-3.24\Modules\CheckCXXCompilerFlag.cmake;D:\Program Files\CMake\share\cmake-3.24\Modules\CheckCXXSourceCompiles.cmake;D:\Program Files\CMake\share\cmake-3.24\Modules\CheckFunctionExists.cmake;D:\Program Files\CMake\share\cmake-3.24\Modules\CheckIncludeFile.cmake;D:\Program Files\CMake\share\cmake-3.24\Modules\CheckIncludeFileCXX.cmake;D:\Program Files\CMake\share\cmake-3.24\Modules\Compiler\CMakeCommonCompilerMacros.cmake;D:\Program Files\CMake\share\cmake-3.24\Modules\Compiler\MSVC-C.cmake;D:\Program Files\CMake\share\cmake-3.24\Modules\Compiler\MSVC-CXX.cmake;D:\Program Files\CMake\share\cmake-3.24\Modules\Compiler\MSVC.cmake;D:\Program Files\CMake\share\cmake-3.24\Modules\FindPackageHandleStandardArgs.cmake;D:\Program Files\CMake\share\cmake-3.24\Modules\FindPackageMessage.cmake;D:\Program Files\CMake\share\cmake-3.24\Modules\GNUInstallDirs.cmake;D:\Program Files\CMake\share\cmake-3.24\Modules\GenerateExportHeader.cmake;D:\Program Files\CMake\share\cmake-3.24\Modules\Internal\CheckCompilerFlag.cmake;D:\Program Files\CMake\share\cmake-3.24\Modules\Internal\CheckFlagCommonConfig.cmake;D:\Program Files\CMake\share\cmake-3.24\Modules\Internal\CheckSourceCompiles.cmake;D:\Program Files\CMake\share\cmake-3.24\Modules\Platform\Windows-MSVC-C.cmake;D:\Program Files\CMake\share\cmake-3.24\Modules\Platform\Windows-MSVC-CXX.cmake;D:\Program Files\CMake\share\cmake-3.24\Modules\Platform\Windows-MSVC.cmake;D:\Program Files\CMake\share\cmake-3.24\Modules\Platform\Windows.cmake;D:\Program Files\CMake\share\cmake-3.24\Modules\Platform\WindowsPaths.cmake;D:\Program Files\CMake\share\cmake-3.24\Modules\WriteBasicConfigVersionFile.cmake;D:\Program Files\CMake\share\cmake-3.24\Modules\exportheader.cmake.in;D:\opencv\build\OpenCVConfig-version.cmake;D:\opencv\build\OpenCVConfig.cmake;D:\opencv\build\x64\vc15\lib\OpenCVConfig.cmake;D:\opencv\build\x64\vc15\lib\OpenCVModules-debug.cmake;D:\opencv\build\x64\vc15\lib\OpenCVModules-release.cmake;D:\opencv\build\x64\vc15\lib\OpenCVModules.cmake;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">D:\HR Estimation\SeetaFace\SeetaFace2\build\CMakeFiles\generate.stamp;D:\HR Estimation\SeetaFace\SeetaFace2\build\SeetaNet\CMakeFiles\generate.stamp;D:\HR Estimation\SeetaFace\SeetaFace2\build\FaceDetector\CMakeFiles\generate.stamp;D:\HR Estimation\SeetaFace\SeetaFace2\build\FaceTracker\CMakeFiles\generate.stamp;D:\HR Estimation\SeetaFace\SeetaFace2\build\FaceLandmarker\CMakeFiles\generate.stamp;D:\HR Estimation\SeetaFace\SeetaFace2\build\FaceRecognizer\CMakeFiles\generate.stamp;D:\HR Estimation\SeetaFace\SeetaFace2\build\QualityAssessor\CMakeFiles\generate.stamp;D:\HR Estimation\SeetaFace\SeetaFace2\build\example\CMakeFiles\generate.stamp;D:\HR Estimation\SeetaFace\SeetaFace2\build\example\points81\CMakeFiles\generate.stamp;D:\HR Estimation\SeetaFace\SeetaFace2\build\example\search\CMakeFiles\generate.stamp;D:\HR Estimation\SeetaFace\SeetaFace2\build\example\tracking\CMakeFiles\generate.stamp;D:\HR Estimation\SeetaFace\SeetaFace2\build\example\crop_face\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Checking Build System</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">setlocal
+"D:\Program Files\CMake\bin\cmake.exe" "-SD:/HR Estimation/SeetaFace/SeetaFace2" "-BD:/HR Estimation/SeetaFace/SeetaFace2/build" --check-stamp-list CMakeFiles/generate.stamp.list --vs-solution-file "D:/HR Estimation/SeetaFace/SeetaFace2/build/SeetaFace.sln"
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">D:\HR Estimation\SeetaFace\SeetaFace2\CMakeLists.txt;D:\HR Estimation\SeetaFace\SeetaFace2\FaceDetector\CMakeLists.txt;D:\HR Estimation\SeetaFace\SeetaFace2\FaceDetector\FaceDetector.pc.in;D:\HR Estimation\SeetaFace\SeetaFace2\FaceLandmarker\CMakeLists.txt;D:\HR Estimation\SeetaFace\SeetaFace2\FaceLandmarker\SeetaFaceLandmarker.pc.in;D:\HR Estimation\SeetaFace\SeetaFace2\FaceRecognizer\CMakeLists.txt;D:\HR Estimation\SeetaFace\SeetaFace2\FaceRecognizer\FaceRecognizer.pc.in;D:\HR Estimation\SeetaFace\SeetaFace2\FaceTracker\CMakeLists.txt;D:\HR Estimation\SeetaFace\SeetaFace2\FaceTracker\FaceTracker.pc.in;D:\HR Estimation\SeetaFace\SeetaFace2\QualityAssessor\CMakeLists.txt;D:\HR Estimation\SeetaFace\SeetaFace2\QualityAssessor\QualityAssessor.pc.in;D:\HR Estimation\SeetaFace\SeetaFace2\SeetaFace.pc.in;D:\HR Estimation\SeetaFace\SeetaFace2\SeetaNet\CMakeLists.txt;D:\HR Estimation\SeetaFace\SeetaFace2\SeetaNet\SeetaNet.pc.in;D:\HR Estimation\SeetaFace\SeetaFace2\build\CMakeFiles\3.24.1\CMakeCCompiler.cmake;D:\HR Estimation\SeetaFace\SeetaFace2\build\CMakeFiles\3.24.1\CMakeCXXCompiler.cmake;D:\HR Estimation\SeetaFace\SeetaFace2\build\CMakeFiles\3.24.1\CMakeRCCompiler.cmake;D:\HR Estimation\SeetaFace\SeetaFace2\build\CMakeFiles\3.24.1\CMakeSystem.cmake;D:\HR Estimation\SeetaFace\SeetaFace2\cmake\cmake_uninstall.cmake.in;D:\HR Estimation\SeetaFace\SeetaFace2\example\CMakeLists.txt;D:\HR Estimation\SeetaFace\SeetaFace2\example\crop_face\CMakeLists.txt;D:\HR Estimation\SeetaFace\SeetaFace2\example\crop_face\UserTemplate.xml;D:\HR Estimation\SeetaFace\SeetaFace2\example\points81\CMakeLists.txt;D:\HR Estimation\SeetaFace\SeetaFace2\example\points81\UserTemplate.xml;D:\HR Estimation\SeetaFace\SeetaFace2\example\search\CMakeLists.txt;D:\HR Estimation\SeetaFace\SeetaFace2\example\search\UserTemplate.xml;D:\HR Estimation\SeetaFace\SeetaFace2\example\tracking\CMakeLists.txt;D:\HR Estimation\SeetaFace\SeetaFace2\example\tracking\UserTemplate.xml;D:\Program Files\CMake\share\cmake-3.24\Modules\BasicConfigVersion-AnyNewerVersion.cmake.in;D:\Program Files\CMake\share\cmake-3.24\Modules\CMakeCInformation.cmake;D:\Program Files\CMake\share\cmake-3.24\Modules\CMakeCXXInformation.cmake;D:\Program Files\CMake\share\cmake-3.24\Modules\CMakeCheckCompilerFlagCommonPatterns.cmake;D:\Program Files\CMake\share\cmake-3.24\Modules\CMakeCommonLanguageInclude.cmake;D:\Program Files\CMake\share\cmake-3.24\Modules\CMakeGenericSystem.cmake;D:\Program Files\CMake\share\cmake-3.24\Modules\CMakeInitializeConfigs.cmake;D:\Program Files\CMake\share\cmake-3.24\Modules\CMakeLanguageInformation.cmake;D:\Program Files\CMake\share\cmake-3.24\Modules\CMakePackageConfigHelpers.cmake;D:\Program Files\CMake\share\cmake-3.24\Modules\CMakeRCInformation.cmake;D:\Program Files\CMake\share\cmake-3.24\Modules\CMakeSystemSpecificInformation.cmake;D:\Program Files\CMake\share\cmake-3.24\Modules\CMakeSystemSpecificInitialize.cmake;D:\Program Files\CMake\share\cmake-3.24\Modules\CheckCCompilerFlag.cmake;D:\Program Files\CMake\share\cmake-3.24\Modules\CheckCSourceCompiles.cmake;D:\Program Files\CMake\share\cmake-3.24\Modules\CheckCXXCompilerFlag.cmake;D:\Program Files\CMake\share\cmake-3.24\Modules\CheckCXXSourceCompiles.cmake;D:\Program Files\CMake\share\cmake-3.24\Modules\CheckFunctionExists.cmake;D:\Program Files\CMake\share\cmake-3.24\Modules\CheckIncludeFile.cmake;D:\Program Files\CMake\share\cmake-3.24\Modules\CheckIncludeFileCXX.cmake;D:\Program Files\CMake\share\cmake-3.24\Modules\Compiler\CMakeCommonCompilerMacros.cmake;D:\Program Files\CMake\share\cmake-3.24\Modules\Compiler\MSVC-C.cmake;D:\Program Files\CMake\share\cmake-3.24\Modules\Compiler\MSVC-CXX.cmake;D:\Program Files\CMake\share\cmake-3.24\Modules\Compiler\MSVC.cmake;D:\Program Files\CMake\share\cmake-3.24\Modules\FindPackageHandleStandardArgs.cmake;D:\Program Files\CMake\share\cmake-3.24\Modules\FindPackageMessage.cmake;D:\Program Files\CMake\share\cmake-3.24\Modules\GNUInstallDirs.cmake;D:\Program Files\CMake\share\cmake-3.24\Modules\GenerateExportHeader.cmake;D:\Program Files\CMake\share\cmake-3.24\Modules\Internal\CheckCompilerFlag.cmake;D:\Program Files\CMake\share\cmake-3.24\Modules\Internal\CheckFlagCommonConfig.cmake;D:\Program Files\CMake\share\cmake-3.24\Modules\Internal\CheckSourceCompiles.cmake;D:\Program Files\CMake\share\cmake-3.24\Modules\Platform\Windows-MSVC-C.cmake;D:\Program Files\CMake\share\cmake-3.24\Modules\Platform\Windows-MSVC-CXX.cmake;D:\Program Files\CMake\share\cmake-3.24\Modules\Platform\Windows-MSVC.cmake;D:\Program Files\CMake\share\cmake-3.24\Modules\Platform\Windows.cmake;D:\Program Files\CMake\share\cmake-3.24\Modules\Platform\WindowsPaths.cmake;D:\Program Files\CMake\share\cmake-3.24\Modules\WriteBasicConfigVersionFile.cmake;D:\Program Files\CMake\share\cmake-3.24\Modules\exportheader.cmake.in;D:\opencv\build\OpenCVConfig-version.cmake;D:\opencv\build\OpenCVConfig.cmake;D:\opencv\build\x64\vc15\lib\OpenCVConfig.cmake;D:\opencv\build\x64\vc15\lib\OpenCVModules-debug.cmake;D:\opencv\build\x64\vc15\lib\OpenCVModules-release.cmake;D:\opencv\build\x64\vc15\lib\OpenCVModules.cmake;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">D:\HR Estimation\SeetaFace\SeetaFace2\build\CMakeFiles\generate.stamp;D:\HR Estimation\SeetaFace\SeetaFace2\build\SeetaNet\CMakeFiles\generate.stamp;D:\HR Estimation\SeetaFace\SeetaFace2\build\FaceDetector\CMakeFiles\generate.stamp;D:\HR Estimation\SeetaFace\SeetaFace2\build\FaceTracker\CMakeFiles\generate.stamp;D:\HR Estimation\SeetaFace\SeetaFace2\build\FaceLandmarker\CMakeFiles\generate.stamp;D:\HR Estimation\SeetaFace\SeetaFace2\build\FaceRecognizer\CMakeFiles\generate.stamp;D:\HR Estimation\SeetaFace\SeetaFace2\build\QualityAssessor\CMakeFiles\generate.stamp;D:\HR Estimation\SeetaFace\SeetaFace2\build\example\CMakeFiles\generate.stamp;D:\HR Estimation\SeetaFace\SeetaFace2\build\example\points81\CMakeFiles\generate.stamp;D:\HR Estimation\SeetaFace\SeetaFace2\build\example\search\CMakeFiles\generate.stamp;D:\HR Estimation\SeetaFace\SeetaFace2\build\example\tracking\CMakeFiles\generate.stamp;D:\HR Estimation\SeetaFace\SeetaFace2\build\example\crop_face\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">Checking Build System</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">setlocal
+"D:\Program Files\CMake\bin\cmake.exe" "-SD:/HR Estimation/SeetaFace/SeetaFace2" "-BD:/HR Estimation/SeetaFace/SeetaFace2/build" --check-stamp-list CMakeFiles/generate.stamp.list --vs-solution-file "D:/HR Estimation/SeetaFace/SeetaFace2/build/SeetaFace.sln"
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">D:\HR Estimation\SeetaFace\SeetaFace2\CMakeLists.txt;D:\HR Estimation\SeetaFace\SeetaFace2\FaceDetector\CMakeLists.txt;D:\HR Estimation\SeetaFace\SeetaFace2\FaceDetector\FaceDetector.pc.in;D:\HR Estimation\SeetaFace\SeetaFace2\FaceLandmarker\CMakeLists.txt;D:\HR Estimation\SeetaFace\SeetaFace2\FaceLandmarker\SeetaFaceLandmarker.pc.in;D:\HR Estimation\SeetaFace\SeetaFace2\FaceRecognizer\CMakeLists.txt;D:\HR Estimation\SeetaFace\SeetaFace2\FaceRecognizer\FaceRecognizer.pc.in;D:\HR Estimation\SeetaFace\SeetaFace2\FaceTracker\CMakeLists.txt;D:\HR Estimation\SeetaFace\SeetaFace2\FaceTracker\FaceTracker.pc.in;D:\HR Estimation\SeetaFace\SeetaFace2\QualityAssessor\CMakeLists.txt;D:\HR Estimation\SeetaFace\SeetaFace2\QualityAssessor\QualityAssessor.pc.in;D:\HR Estimation\SeetaFace\SeetaFace2\SeetaFace.pc.in;D:\HR Estimation\SeetaFace\SeetaFace2\SeetaNet\CMakeLists.txt;D:\HR Estimation\SeetaFace\SeetaFace2\SeetaNet\SeetaNet.pc.in;D:\HR Estimation\SeetaFace\SeetaFace2\build\CMakeFiles\3.24.1\CMakeCCompiler.cmake;D:\HR Estimation\SeetaFace\SeetaFace2\build\CMakeFiles\3.24.1\CMakeCXXCompiler.cmake;D:\HR Estimation\SeetaFace\SeetaFace2\build\CMakeFiles\3.24.1\CMakeRCCompiler.cmake;D:\HR Estimation\SeetaFace\SeetaFace2\build\CMakeFiles\3.24.1\CMakeSystem.cmake;D:\HR Estimation\SeetaFace\SeetaFace2\cmake\cmake_uninstall.cmake.in;D:\HR Estimation\SeetaFace\SeetaFace2\example\CMakeLists.txt;D:\HR Estimation\SeetaFace\SeetaFace2\example\crop_face\CMakeLists.txt;D:\HR Estimation\SeetaFace\SeetaFace2\example\crop_face\UserTemplate.xml;D:\HR Estimation\SeetaFace\SeetaFace2\example\points81\CMakeLists.txt;D:\HR Estimation\SeetaFace\SeetaFace2\example\points81\UserTemplate.xml;D:\HR Estimation\SeetaFace\SeetaFace2\example\search\CMakeLists.txt;D:\HR Estimation\SeetaFace\SeetaFace2\example\search\UserTemplate.xml;D:\HR Estimation\SeetaFace\SeetaFace2\example\tracking\CMakeLists.txt;D:\HR Estimation\SeetaFace\SeetaFace2\example\tracking\UserTemplate.xml;D:\Program Files\CMake\share\cmake-3.24\Modules\BasicConfigVersion-AnyNewerVersion.cmake.in;D:\Program Files\CMake\share\cmake-3.24\Modules\CMakeCInformation.cmake;D:\Program Files\CMake\share\cmake-3.24\Modules\CMakeCXXInformation.cmake;D:\Program Files\CMake\share\cmake-3.24\Modules\CMakeCheckCompilerFlagCommonPatterns.cmake;D:\Program Files\CMake\share\cmake-3.24\Modules\CMakeCommonLanguageInclude.cmake;D:\Program Files\CMake\share\cmake-3.24\Modules\CMakeGenericSystem.cmake;D:\Program Files\CMake\share\cmake-3.24\Modules\CMakeInitializeConfigs.cmake;D:\Program Files\CMake\share\cmake-3.24\Modules\CMakeLanguageInformation.cmake;D:\Program Files\CMake\share\cmake-3.24\Modules\CMakePackageConfigHelpers.cmake;D:\Program Files\CMake\share\cmake-3.24\Modules\CMakeRCInformation.cmake;D:\Program Files\CMake\share\cmake-3.24\Modules\CMakeSystemSpecificInformation.cmake;D:\Program Files\CMake\share\cmake-3.24\Modules\CMakeSystemSpecificInitialize.cmake;D:\Program Files\CMake\share\cmake-3.24\Modules\CheckCCompilerFlag.cmake;D:\Program Files\CMake\share\cmake-3.24\Modules\CheckCSourceCompiles.cmake;D:\Program Files\CMake\share\cmake-3.24\Modules\CheckCXXCompilerFlag.cmake;D:\Program Files\CMake\share\cmake-3.24\Modules\CheckCXXSourceCompiles.cmake;D:\Program Files\CMake\share\cmake-3.24\Modules\CheckFunctionExists.cmake;D:\Program Files\CMake\share\cmake-3.24\Modules\CheckIncludeFile.cmake;D:\Program Files\CMake\share\cmake-3.24\Modules\CheckIncludeFileCXX.cmake;D:\Program Files\CMake\share\cmake-3.24\Modules\Compiler\CMakeCommonCompilerMacros.cmake;D:\Program Files\CMake\share\cmake-3.24\Modules\Compiler\MSVC-C.cmake;D:\Program Files\CMake\share\cmake-3.24\Modules\Compiler\MSVC-CXX.cmake;D:\Program Files\CMake\share\cmake-3.24\Modules\Compiler\MSVC.cmake;D:\Program Files\CMake\share\cmake-3.24\Modules\FindPackageHandleStandardArgs.cmake;D:\Program Files\CMake\share\cmake-3.24\Modules\FindPackageMessage.cmake;D:\Program Files\CMake\share\cmake-3.24\Modules\GNUInstallDirs.cmake;D:\Program Files\CMake\share\cmake-3.24\Modules\GenerateExportHeader.cmake;D:\Program Files\CMake\share\cmake-3.24\Modules\Internal\CheckCompilerFlag.cmake;D:\Program Files\CMake\share\cmake-3.24\Modules\Internal\CheckFlagCommonConfig.cmake;D:\Program Files\CMake\share\cmake-3.24\Modules\Internal\CheckSourceCompiles.cmake;D:\Program Files\CMake\share\cmake-3.24\Modules\Platform\Windows-MSVC-C.cmake;D:\Program Files\CMake\share\cmake-3.24\Modules\Platform\Windows-MSVC-CXX.cmake;D:\Program Files\CMake\share\cmake-3.24\Modules\Platform\Windows-MSVC.cmake;D:\Program Files\CMake\share\cmake-3.24\Modules\Platform\Windows.cmake;D:\Program Files\CMake\share\cmake-3.24\Modules\Platform\WindowsPaths.cmake;D:\Program Files\CMake\share\cmake-3.24\Modules\WriteBasicConfigVersionFile.cmake;D:\Program Files\CMake\share\cmake-3.24\Modules\exportheader.cmake.in;D:\opencv\build\OpenCVConfig-version.cmake;D:\opencv\build\OpenCVConfig.cmake;D:\opencv\build\x64\vc15\lib\OpenCVConfig.cmake;D:\opencv\build\x64\vc15\lib\OpenCVModules-debug.cmake;D:\opencv\build\x64\vc15\lib\OpenCVModules-release.cmake;D:\opencv\build\x64\vc15\lib\OpenCVModules.cmake;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">D:\HR Estimation\SeetaFace\SeetaFace2\build\CMakeFiles\generate.stamp;D:\HR Estimation\SeetaFace\SeetaFace2\build\SeetaNet\CMakeFiles\generate.stamp;D:\HR Estimation\SeetaFace\SeetaFace2\build\FaceDetector\CMakeFiles\generate.stamp;D:\HR Estimation\SeetaFace\SeetaFace2\build\FaceTracker\CMakeFiles\generate.stamp;D:\HR Estimation\SeetaFace\SeetaFace2\build\FaceLandmarker\CMakeFiles\generate.stamp;D:\HR Estimation\SeetaFace\SeetaFace2\build\FaceRecognizer\CMakeFiles\generate.stamp;D:\HR Estimation\SeetaFace\SeetaFace2\build\QualityAssessor\CMakeFiles\generate.stamp;D:\HR Estimation\SeetaFace\SeetaFace2\build\example\CMakeFiles\generate.stamp;D:\HR Estimation\SeetaFace\SeetaFace2\build\example\points81\CMakeFiles\generate.stamp;D:\HR Estimation\SeetaFace\SeetaFace2\build\example\search\CMakeFiles\generate.stamp;D:\HR Estimation\SeetaFace\SeetaFace2\build\example\tracking\CMakeFiles\generate.stamp;D:\HR Estimation\SeetaFace\SeetaFace2\build\example\crop_face\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">Checking Build System</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">setlocal
+"D:\Program Files\CMake\bin\cmake.exe" "-SD:/HR Estimation/SeetaFace/SeetaFace2" "-BD:/HR Estimation/SeetaFace/SeetaFace2/build" --check-stamp-list CMakeFiles/generate.stamp.list --vs-solution-file "D:/HR Estimation/SeetaFace/SeetaFace2/build/SeetaFace.sln"
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">D:\HR Estimation\SeetaFace\SeetaFace2\CMakeLists.txt;D:\HR Estimation\SeetaFace\SeetaFace2\FaceDetector\CMakeLists.txt;D:\HR Estimation\SeetaFace\SeetaFace2\FaceDetector\FaceDetector.pc.in;D:\HR Estimation\SeetaFace\SeetaFace2\FaceLandmarker\CMakeLists.txt;D:\HR Estimation\SeetaFace\SeetaFace2\FaceLandmarker\SeetaFaceLandmarker.pc.in;D:\HR Estimation\SeetaFace\SeetaFace2\FaceRecognizer\CMakeLists.txt;D:\HR Estimation\SeetaFace\SeetaFace2\FaceRecognizer\FaceRecognizer.pc.in;D:\HR Estimation\SeetaFace\SeetaFace2\FaceTracker\CMakeLists.txt;D:\HR Estimation\SeetaFace\SeetaFace2\FaceTracker\FaceTracker.pc.in;D:\HR Estimation\SeetaFace\SeetaFace2\QualityAssessor\CMakeLists.txt;D:\HR Estimation\SeetaFace\SeetaFace2\QualityAssessor\QualityAssessor.pc.in;D:\HR Estimation\SeetaFace\SeetaFace2\SeetaFace.pc.in;D:\HR Estimation\SeetaFace\SeetaFace2\SeetaNet\CMakeLists.txt;D:\HR Estimation\SeetaFace\SeetaFace2\SeetaNet\SeetaNet.pc.in;D:\HR Estimation\SeetaFace\SeetaFace2\build\CMakeFiles\3.24.1\CMakeCCompiler.cmake;D:\HR Estimation\SeetaFace\SeetaFace2\build\CMakeFiles\3.24.1\CMakeCXXCompiler.cmake;D:\HR Estimation\SeetaFace\SeetaFace2\build\CMakeFiles\3.24.1\CMakeRCCompiler.cmake;D:\HR Estimation\SeetaFace\SeetaFace2\build\CMakeFiles\3.24.1\CMakeSystem.cmake;D:\HR Estimation\SeetaFace\SeetaFace2\cmake\cmake_uninstall.cmake.in;D:\HR Estimation\SeetaFace\SeetaFace2\example\CMakeLists.txt;D:\HR Estimation\SeetaFace\SeetaFace2\example\crop_face\CMakeLists.txt;D:\HR Estimation\SeetaFace\SeetaFace2\example\crop_face\UserTemplate.xml;D:\HR Estimation\SeetaFace\SeetaFace2\example\points81\CMakeLists.txt;D:\HR Estimation\SeetaFace\SeetaFace2\example\points81\UserTemplate.xml;D:\HR Estimation\SeetaFace\SeetaFace2\example\search\CMakeLists.txt;D:\HR Estimation\SeetaFace\SeetaFace2\example\search\UserTemplate.xml;D:\HR Estimation\SeetaFace\SeetaFace2\example\tracking\CMakeLists.txt;D:\HR Estimation\SeetaFace\SeetaFace2\example\tracking\UserTemplate.xml;D:\Program Files\CMake\share\cmake-3.24\Modules\BasicConfigVersion-AnyNewerVersion.cmake.in;D:\Program Files\CMake\share\cmake-3.24\Modules\CMakeCInformation.cmake;D:\Program Files\CMake\share\cmake-3.24\Modules\CMakeCXXInformation.cmake;D:\Program Files\CMake\share\cmake-3.24\Modules\CMakeCheckCompilerFlagCommonPatterns.cmake;D:\Program Files\CMake\share\cmake-3.24\Modules\CMakeCommonLanguageInclude.cmake;D:\Program Files\CMake\share\cmake-3.24\Modules\CMakeGenericSystem.cmake;D:\Program Files\CMake\share\cmake-3.24\Modules\CMakeInitializeConfigs.cmake;D:\Program Files\CMake\share\cmake-3.24\Modules\CMakeLanguageInformation.cmake;D:\Program Files\CMake\share\cmake-3.24\Modules\CMakePackageConfigHelpers.cmake;D:\Program Files\CMake\share\cmake-3.24\Modules\CMakeRCInformation.cmake;D:\Program Files\CMake\share\cmake-3.24\Modules\CMakeSystemSpecificInformation.cmake;D:\Program Files\CMake\share\cmake-3.24\Modules\CMakeSystemSpecificInitialize.cmake;D:\Program Files\CMake\share\cmake-3.24\Modules\CheckCCompilerFlag.cmake;D:\Program Files\CMake\share\cmake-3.24\Modules\CheckCSourceCompiles.cmake;D:\Program Files\CMake\share\cmake-3.24\Modules\CheckCXXCompilerFlag.cmake;D:\Program Files\CMake\share\cmake-3.24\Modules\CheckCXXSourceCompiles.cmake;D:\Program Files\CMake\share\cmake-3.24\Modules\CheckFunctionExists.cmake;D:\Program Files\CMake\share\cmake-3.24\Modules\CheckIncludeFile.cmake;D:\Program Files\CMake\share\cmake-3.24\Modules\CheckIncludeFileCXX.cmake;D:\Program Files\CMake\share\cmake-3.24\Modules\Compiler\CMakeCommonCompilerMacros.cmake;D:\Program Files\CMake\share\cmake-3.24\Modules\Compiler\MSVC-C.cmake;D:\Program Files\CMake\share\cmake-3.24\Modules\Compiler\MSVC-CXX.cmake;D:\Program Files\CMake\share\cmake-3.24\Modules\Compiler\MSVC.cmake;D:\Program Files\CMake\share\cmake-3.24\Modules\FindPackageHandleStandardArgs.cmake;D:\Program Files\CMake\share\cmake-3.24\Modules\FindPackageMessage.cmake;D:\Program Files\CMake\share\cmake-3.24\Modules\GNUInstallDirs.cmake;D:\Program Files\CMake\share\cmake-3.24\Modules\GenerateExportHeader.cmake;D:\Program Files\CMake\share\cmake-3.24\Modules\Internal\CheckCompilerFlag.cmake;D:\Program Files\CMake\share\cmake-3.24\Modules\Internal\CheckFlagCommonConfig.cmake;D:\Program Files\CMake\share\cmake-3.24\Modules\Internal\CheckSourceCompiles.cmake;D:\Program Files\CMake\share\cmake-3.24\Modules\Platform\Windows-MSVC-C.cmake;D:\Program Files\CMake\share\cmake-3.24\Modules\Platform\Windows-MSVC-CXX.cmake;D:\Program Files\CMake\share\cmake-3.24\Modules\Platform\Windows-MSVC.cmake;D:\Program Files\CMake\share\cmake-3.24\Modules\Platform\Windows.cmake;D:\Program Files\CMake\share\cmake-3.24\Modules\Platform\WindowsPaths.cmake;D:\Program Files\CMake\share\cmake-3.24\Modules\WriteBasicConfigVersionFile.cmake;D:\Program Files\CMake\share\cmake-3.24\Modules\exportheader.cmake.in;D:\opencv\build\OpenCVConfig-version.cmake;D:\opencv\build\OpenCVConfig.cmake;D:\opencv\build\x64\vc15\lib\OpenCVConfig.cmake;D:\opencv\build\x64\vc15\lib\OpenCVModules-debug.cmake;D:\opencv\build\x64\vc15\lib\OpenCVModules-release.cmake;D:\opencv\build\x64\vc15\lib\OpenCVModules.cmake;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">D:\HR Estimation\SeetaFace\SeetaFace2\build\CMakeFiles\generate.stamp;D:\HR Estimation\SeetaFace\SeetaFace2\build\SeetaNet\CMakeFiles\generate.stamp;D:\HR Estimation\SeetaFace\SeetaFace2\build\FaceDetector\CMakeFiles\generate.stamp;D:\HR Estimation\SeetaFace\SeetaFace2\build\FaceTracker\CMakeFiles\generate.stamp;D:\HR Estimation\SeetaFace\SeetaFace2\build\FaceLandmarker\CMakeFiles\generate.stamp;D:\HR Estimation\SeetaFace\SeetaFace2\build\FaceRecognizer\CMakeFiles\generate.stamp;D:\HR Estimation\SeetaFace\SeetaFace2\build\QualityAssessor\CMakeFiles\generate.stamp;D:\HR Estimation\SeetaFace\SeetaFace2\build\example\CMakeFiles\generate.stamp;D:\HR Estimation\SeetaFace\SeetaFace2\build\example\points81\CMakeFiles\generate.stamp;D:\HR Estimation\SeetaFace\SeetaFace2\build\example\search\CMakeFiles\generate.stamp;D:\HR Estimation\SeetaFace\SeetaFace2\build\example\tracking\CMakeFiles\generate.stamp;D:\HR Estimation\SeetaFace\SeetaFace2\build\example\crop_face\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+  </ItemGroup>
+  <ItemGroup>
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

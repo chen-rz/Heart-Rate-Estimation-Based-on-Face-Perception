@@ -1,0 +1,10 @@
+^D:\HR ESTIMATION\REAL-TIME HR\SEETAFACE2ENGINE\BUILD\CMAKEFILES\C9BAA62136BD20289B5B1833A0099793\GENERATE.STAMP.RULE
+setlocal
+"D:\Program Files\CMake\bin\cmake.exe" "-SD:/HR Estimation/Real-time HR/SeetaFace2Engine" "-BD:/HR Estimation/Real-time HR/SeetaFace2Engine/build" --check-stamp-list CMakeFiles/generate.stamp.list --vs-solution-file "D:/HR Estimation/Real-time HR/SeetaFace2Engine/build/SeetaFace.sln"
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd

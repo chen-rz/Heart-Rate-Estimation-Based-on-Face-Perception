@@ -1,0 +1,1 @@
+['../STmap/02/02_DM/', '../STmap/02/02_DS/', '../STmap/02/02_NM/', '../STmap/04/04_DM/', '../STmap/04/04_NS/', '../STmap/06/06_DS/', '../STmap/06/06_NS/', '../STmap/07/07_DS/', '../STmap/08/08_DM/', '../STmap/08/08_DS/', '../STmap/09/09_NM/', '../STmap/09/09_NS/', '../STmap/10/10_NS/', '../STmap/11/11_DS/', '../STmap/11/11_NM/', '../STmap/11/11_NS/']

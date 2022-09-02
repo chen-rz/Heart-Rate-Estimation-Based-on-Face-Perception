@@ -1,0 +1,10 @@
+^D:\HR ESTIMATION\SEETAFACE\SEETAFACE2\BUILD\CMAKEFILES\8C1E20F8BB0C839052A598B277A33AA7\INSTALL_FORCE.RULE
+setlocal
+cd .
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd

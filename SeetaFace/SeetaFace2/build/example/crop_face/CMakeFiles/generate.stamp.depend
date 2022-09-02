@@ -1,0 +1,11 @@
+# CMake generation dependency list for this directory.
+D:/HR Estimation/SeetaFace/SeetaFace2/example/crop_face/CMakeLists.txt
+D:/HR Estimation/SeetaFace/SeetaFace2/example/crop_face/UserTemplate.xml
+D:/Program Files/CMake/share/cmake-3.24/Modules/FindPackageHandleStandardArgs.cmake
+D:/Program Files/CMake/share/cmake-3.24/Modules/FindPackageMessage.cmake
+D:/opencv/build/OpenCVConfig-version.cmake
+D:/opencv/build/OpenCVConfig.cmake
+D:/opencv/build/x64/vc15/lib/OpenCVConfig.cmake
+D:/opencv/build/x64/vc15/lib/OpenCVModules-debug.cmake
+D:/opencv/build/x64/vc15/lib/OpenCVModules-release.cmake
+D:/opencv/build/x64/vc15/lib/OpenCVModules.cmake

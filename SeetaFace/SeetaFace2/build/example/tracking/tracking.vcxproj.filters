@@ -1,0 +1,16 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="17.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="D:\HR Estimation\SeetaFace\SeetaFace2\example\tracking\example.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="D:\HR Estimation\SeetaFace\SeetaFace2\example\tracking\CMakeLists.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{09A7DF12-ADF9-3C04-8146-DF802E53BD69}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>

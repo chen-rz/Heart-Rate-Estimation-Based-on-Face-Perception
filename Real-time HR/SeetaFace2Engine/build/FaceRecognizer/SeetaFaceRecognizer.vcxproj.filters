@@ -1,0 +1,34 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="17.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="D:\HR Estimation\Real-time HR\SeetaFace2Engine\FaceRecognizer\src\seeta\FaceDatabase.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\HR Estimation\Real-time HR\SeetaFace2Engine\FaceRecognizer\src\seeta\FaceRecognizer.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\HR Estimation\Real-time HR\SeetaFace2Engine\FaceRecognizer\seeta\FaceRecognizerPrivate.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\HR Estimation\Real-time HR\SeetaFace2Engine\FaceRecognizer\seeta\ImageProcess.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\HR Estimation\Real-time HR\SeetaFace2Engine\FaceRecognizer\seeta\SeetaNetParseProto.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\HR Estimation\Real-time HR\SeetaFace2Engine\FaceRecognizer\seeta\common_alignment.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\HR Estimation\Real-time HR\SeetaFace2Engine\FaceRecognizer\seeta\graphics2d.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="D:\HR Estimation\Real-time HR\SeetaFace2Engine\FaceRecognizer\CMakeLists.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{56A7885F-1CFE-3307-BDEA-143692BCFB23}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>

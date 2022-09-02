@@ -1,0 +1,10 @@
+^D:\HR ESTIMATION\REAL-TIME HR\SEETAFACE2ENGINE\EXAMPLE\SEARCH\CMAKELISTS.TXT
+setlocal
+"D:\Program Files\CMake\bin\cmake.exe" "-SD:/HR Estimation/Real-time HR/SeetaFace2Engine" "-BD:/HR Estimation/Real-time HR/SeetaFace2Engine/build" --check-stamp-file "D:/HR Estimation/Real-time HR/SeetaFace2Engine/build/example/search/CMakeFiles/generate.stamp"
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
