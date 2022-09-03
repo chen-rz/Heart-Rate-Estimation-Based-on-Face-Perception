@@ -134,6 +134,8 @@ def net_train():
         # 查看内存
         # get_memory_info()
 
+    train_loss /= len(train_loader)
+    train_loss_hr /= len(train_loader)
     return train_loss, train_loss_hr
 
 
@@ -166,6 +168,7 @@ def net_eval():
             feat_hrf2, feat_nf2, hrf2, idx2
         del loss
 
+    eval_loss /= len(eval_loader)
     return eval_loss
 
 
@@ -174,8 +177,7 @@ loss_rec, loss_hr_rec, eval_loss_rec = [], [], []
 
 begin_epoch = 1
 
-scheduler = MultiStepLR(optimizer, milestones=[30, 80], gamma=0.5)
-# scheduler = MultiStepLR(optimizer, milestones=[30, 60], gamma=0.5)
+scheduler = MultiStepLR(optimizer, milestones=[31, 61], gamma=0.5)
 
 for epoch in range(begin_epoch, epoch_num + 1):
     if epoch > 20:
@@ -197,6 +199,9 @@ for epoch in range(begin_epoch, epoch_num + 1):
     eval_loss_rec.append(ev_lo)
     print("[" + time.ctime(), end="] ")
     print('Validating... Epoch: {:.0f}, Loss_HR: {:.4f}'.format(epoch, ev_lo))
+
+    # Schedule
+    scheduler.step()
 
     torch.cuda.empty_cache()
 

@@ -11,7 +11,6 @@ from torch.autograd import Variable
 from torch.utils.data import DataLoader
 from torchvision import transforms
 
-sys.path.append("..")
 from utils.database.Pixelmap import PixelMap_fold_STmap
 
 raw_video = "./VideoCapture/raw_video.MOV"
@@ -74,7 +73,7 @@ while time.time() < welcome_end_time:
     cv2.imshow(welcome_window, frame_welcome)
     if cv2.waitKey(10) == 27:
         print("Keyboard Interrupt: Program ended by Esc")
-        exit(0)
+        sys.exit(0)
 
 # Record Raw Video
 # Open Camera
@@ -92,7 +91,7 @@ codec = vw.fourcc('a', 'v', 'c', '1')
 vw.open(raw_video, codec, 30.0, (1280, 720))
 if not vw.isOpened():
     print("Error: Failed to instantiate video writer")
-    exit(1)
+    sys.exit(1)
 
 # Process Each Frame
 frame_count = 0
@@ -100,7 +99,7 @@ while True:
     cap_suc, frame = capture.read()
     if not cap_suc:
         print("Error: Failed to open camera")
-        exit(1)
+        sys.exit(1)
     frame_count += 1
 
     # Write Time
@@ -138,7 +137,7 @@ try:
     subprocess.check_output(landmark_exe, creationflags=subprocess.CREATE_NEW_CONSOLE)
 except subprocess.CalledProcessError:
     print("Error: No face detected in the current frame. Please keep steady and try again.")
-    exit(1)
+    sys.exit(1)
 
 # Show prompt
 stmap_window = "Generating STmaps..."
@@ -171,7 +170,7 @@ try:
     subprocess.check_output(matlab_exe, creationflags=subprocess.CREATE_NEW_CONSOLE)
 except subprocess.CalledProcessError:
     print("Error: An unexpected error occurred while generating STmaps.")
-    exit(1)
+    sys.exit(1)
 
 # Close Prompt
 cv2.destroyWindow(stmap_window)
@@ -192,8 +191,13 @@ test_dataset = PixelMap_fold_STmap(root_dir='./VideoCapture/STmaps/',
 test_loader = DataLoader(test_dataset, batch_size=1, shuffle=False, num_workers=0)
 
 ################################################################################
-net_id = "1662080288"
-net = torch.load('./HR_models/hr_model_cuda_' + net_id + ".pt", map_location=torch.device('cpu'))
+net_id = "1662170218"
+
+net_file = "./model.pt"
+if os.path.exists("./HR_models/"):
+    net_file = './HR_models/hr_model_cuda_' + net_id + ".pt"
+
+net = torch.load(net_file, map_location=torch.device('cpu'))
 
 net.to(torch.device("cpu"))
 net.eval()
@@ -245,7 +249,7 @@ while frm_o_count < frame_num:
     out_cap_suc, frame_o = capture_o.read()
     if not out_cap_suc:
         print("Error: Failed to read video file " + raw_video)
-        exit(1)
+        sys.exit(1)
     frm_o_count += 1
 
     # Update Output
