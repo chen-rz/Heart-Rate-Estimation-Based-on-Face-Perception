@@ -1,9 +1,6 @@
-import os
-import subprocess as sp
 import sys
 import time
 
-import psutil
 import torch
 import torch.nn as nn
 from torch.autograd import Variable
@@ -19,22 +16,8 @@ from utils.model.model_disentangle import HR_disentangle_cross
 from utils.loss.loss_cross import Cross_loss
 
 
-# 查看内存信息
-def get_memory_info():
-    _output_to_list = lambda x: x.decode('ascii').split('\n')[:-1]
-
-    COMMAND = "nvidia-smi --query-gpu=memory.free --format=csv"
-    memory_free_info = _output_to_list(sp.check_output(COMMAND.split()))[1:]
-    memory_free_values = [int(x.split()[0]) for i, x in enumerate(memory_free_info)]
-
-    occupied_memory = psutil.Process(os.getpid()).memory_info().rss / 1024 / 1024
-    print("Memory occupied: " + str(occupied_memory) + "MB | "
-          + "GPU Memory Available: " + str(memory_free_values) + "MB")
-
-
 ################################################################################
 batch_size_num = 2
-epoch_num = 70
 eval_batch_size = 5
 
 toTensor = transforms.ToTensor()
@@ -173,19 +156,20 @@ def net_eval():
 
 
 ################################################################################
-loss_rec, loss_hr_rec, eval_loss_rec = [], [], []
+loss_rec, loss_hr_rec, eval_loss_rec, lr_rec = [], [], [], []
 
 begin_epoch = 1
+epoch_num = 70
 
-scheduler = MultiStepLR(optimizer, milestones=[31, 61], gamma=0.5)
+scheduler = MultiStepLR(optimizer, milestones=[30, 60], gamma=0.5)
 
 for epoch in range(begin_epoch, epoch_num + 1):
-    if epoch > 20:
-        train_dataset.transform = transforms.Compose([resize, toTensor])
-        train_dataset.VerticalFlip = False
-
-        train_loader = DataLoader(train_dataset, batch_size=batch_size_num,
-                                  shuffle=True, num_workers=2)
+    # if epoch > 20:
+    #     train_dataset.transform = transforms.Compose([resize, toTensor])
+    #     train_dataset.VerticalFlip = False
+    #
+    #     train_loader = DataLoader(train_dataset, batch_size=batch_size_num,
+    #                               shuffle=True, num_workers=2)
 
     # Train
     lo, lohr = net_train()
@@ -193,6 +177,11 @@ for epoch in range(begin_epoch, epoch_num + 1):
     loss_hr_rec.append(lohr)
     print("[" + time.ctime(), end="] ")
     print('Training... Epoch: {:.0f}, Loss: {:.4f}, Loss_HR: {:.4f}'.format(epoch, lo, lohr))
+
+    l_r = optimizer.state_dict()['param_groups'][0]['lr']
+    lr_rec.append(l_r)
+    print(" " * 26, end=" ")
+    print('            Epoch: {:.0f}, Learning Rate: {:.4f}'.format(epoch, l_r))
 
     # Evaluation
     ev_lo = net_eval()
@@ -224,5 +213,9 @@ wf = open("./model_eval_loss_cuda_" + timestamp_str + ".txt", mode='w')
 wf.write(str(eval_loss_rec))
 wf.close()
 
+wf = open("./model_learning_rates_cuda_" + timestamp_str + ".txt", mode='w')
+wf.write(str(lr_rec))
+wf.close()
+
 print("[" + time.ctime(), end="] ")
-print("Saved loss statistics")
+print("Saved statistics")

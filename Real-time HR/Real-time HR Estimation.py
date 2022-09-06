@@ -45,6 +45,7 @@ frame_welcome_raw[0:, 0:, 0], frame_welcome_raw[0:, 0:, 1], frame_welcome_raw[0:
     = 239, 173, 0  # BGR
 cv2.namedWindow(welcome_window, cv2.WINDOW_NORMAL)
 cv2.resizeWindow(welcome_window, 960, 540)
+cv2.setWindowProperty(welcome_window, cv2.WND_PROP_TOPMOST, 1)
 welcome_end_time = time.time() + 5
 while time.time() < welcome_end_time:
     frame_welcome = frame_welcome_raw.copy()
@@ -64,15 +65,17 @@ while time.time() < welcome_end_time:
     cv2.putText(
         frame_welcome,
         "After being opened, it may take another few seconds for the camera to be ready.",
-        (50, 250), cv2.FONT_HERSHEY_SIMPLEX, 0.6, (255, 255, 255), 1
+        (50, 250), cv2.FONT_HERSHEY_SIMPLEX, 0.65, (255, 255, 255), 2
     )
     cv2.putText(
         frame_welcome, "Press Esc before the camera is opened to exit the program.", (50, 300),
-        cv2.FONT_HERSHEY_SIMPLEX, 0.6, (255, 255, 255), 1
+        cv2.FONT_HERSHEY_SIMPLEX, 0.75, (255, 255, 255), 2
     )
     cv2.imshow(welcome_window, frame_welcome)
     if cv2.waitKey(10) == 27:
         print("Keyboard Interrupt: Program ended by Esc")
+        cv2.destroyAllWindows()
+        os.system("pause")
         sys.exit(0)
 
 # Record Raw Video
@@ -91,6 +94,7 @@ codec = vw.fourcc('a', 'v', 'c', '1')
 vw.open(raw_video, codec, 30.0, (1280, 720))
 if not vw.isOpened():
     print("Error: Failed to instantiate video writer")
+    os.system("pause")
     sys.exit(1)
 
 # Process Each Frame
@@ -99,6 +103,7 @@ while True:
     cap_suc, frame = capture.read()
     if not cap_suc:
         print("Error: Failed to open camera")
+        os.system("pause")
         sys.exit(1)
     frame_count += 1
 
@@ -112,16 +117,21 @@ while True:
 
     cv2.putText(
         frame, time.ctime() + "    Frame: " + str(frame_count), (10, 30),
-        cv2.FONT_HERSHEY_SIMPLEX, 0.75, (128, 128, 255), 2
+        cv2.FONT_HERSHEY_SIMPLEX, 1, (215, 120, 0), 2
     )
     cv2.putText(
-        frame, "Press Esc to Stop Recording After 360 Frames", (10, 80),
-        cv2.FONT_HERSHEY_SIMPLEX, 1, (128, 128, 255), 2
+        frame, "You can record for as long as you want, but at least 360 frames.", (10, 80),
+        cv2.FONT_HERSHEY_SIMPLEX, 0.8, (64, 64, 255), 2
+    )
+    cv2.putText(
+        frame, "Press Esc to Stop Recording After 360 Frames", (10, 120),
+        cv2.FONT_HERSHEY_SIMPLEX, 1, (64, 64, 255), 2
     )
 
     camera_window = "Heart Rate Estimation Based on Face Perception"
     cv2.namedWindow(camera_window, cv2.WINDOW_NORMAL)
     cv2.resizeWindow(camera_window, 960, 540)
+    cv2.setWindowProperty(camera_window, cv2.WND_PROP_TOPMOST, 1)
     cv2.imshow(camera_window, frame)
 
     if cv2.waitKey(1) == 27 and frame_count > 360:
@@ -137,6 +147,7 @@ try:
     subprocess.check_output(landmark_exe, creationflags=subprocess.CREATE_NEW_CONSOLE)
 except subprocess.CalledProcessError:
     print("Error: No face detected in the current frame. Please keep steady and try again.")
+    os.system("pause")
     sys.exit(1)
 
 # Show prompt
@@ -144,6 +155,9 @@ stmap_window = "Generating STmaps..."
 frame_stmap = np.zeros((540, 960, 3), np.uint8)
 frame_stmap[0:, 0:, 0], frame_stmap[0:, 0:, 1], frame_stmap[0:, 0:, 2] \
     = 239, 173, 0  # BGR
+cv2.namedWindow(stmap_window, cv2.WINDOW_NORMAL)
+cv2.resizeWindow(stmap_window, 960, 540)
+cv2.setWindowProperty(stmap_window, cv2.WND_PROP_TOPMOST, 1)
 cv2.putText(
     frame_stmap, "Heart Rate Estimation Based on Face Perception",
     (50, 80), cv2.FONT_HERSHEY_SIMPLEX, 1, (255, 255, 255), 3
@@ -160,6 +174,10 @@ cv2.putText(
     frame_stmap, "This may take up to several minutes. Please wait...",
     (50, 250), cv2.FONT_HERSHEY_SIMPLEX, 0.75, (255, 255, 255), 2
 )
+cv2.putText(
+    frame_stmap, "This window will close automatically after completion.",
+    (50, 300), cv2.FONT_HERSHEY_SIMPLEX, 0.75, (255, 255, 255), 2
+)
 cv2.imshow(stmap_window, frame_stmap)
 cv2.waitKey(10)
 
@@ -170,6 +188,8 @@ try:
     subprocess.check_output(matlab_exe, creationflags=subprocess.CREATE_NEW_CONSOLE)
 except subprocess.CalledProcessError:
     print("Error: An unexpected error occurred while generating STmaps.")
+    cv2.destroyAllWindows()
+    os.system("pause")
     sys.exit(1)
 
 # Close Prompt
@@ -249,6 +269,8 @@ while frm_o_count < frame_num:
     out_cap_suc, frame_o = capture_o.read()
     if not out_cap_suc:
         print("Error: Failed to read video file " + raw_video)
+        cv2.destroyAllWindows()
+        os.system("pause")
         sys.exit(1)
     frm_o_count += 1
 
@@ -265,15 +287,15 @@ while frm_o_count < frame_num:
     cv2.putText(
         frame_o,
         time.ctime(time_list[frm_o_count - 1] / 1000.0) + "    Frame: " + str(frm_o_count),
-        (10, 30), cv2.FONT_HERSHEY_SIMPLEX, 0.75, (239, 173, 0), 2
+        (10, 30), cv2.FONT_HERSHEY_SIMPLEX, 0.75, (215, 120, 0), 2
     )
     cv2.putText(
         frame_o, "Estimated Heart Rate: ",
-        (10, 80), cv2.FONT_HERSHEY_SIMPLEX, 1, (239, 173, 0), 2
+        (10, 80), cv2.FONT_HERSHEY_SIMPLEX, 1, (215, 120, 0), 2
     )
     cv2.putText(
         frame_o, str(round(output_list[clip_idx], 1)),
-        (50, 160), cv2.FONT_HERSHEY_SIMPLEX, 2, (239, 173, 0), 5
+        (50, 160), cv2.FONT_HERSHEY_SIMPLEX, 2, (215, 120, 0), 5
     )
 
     # Write Output Video
@@ -283,16 +305,17 @@ while frm_o_count < frame_num:
     if frm_o_count == frame_num - 1:
         cv2.putText(
             frame_o, "Successfully finished! You can close this window and view the video at ",
-            (10, 210), cv2.FONT_HERSHEY_SIMPLEX, 0.75, (16, 255, 16), 2
+            (10, 210), cv2.FONT_HERSHEY_SIMPLEX, 0.75, (64, 64, 255), 2
         )
         cv2.putText(
             frame_o, out_video_file,
-            (10, 250), cv2.FONT_HERSHEY_SIMPLEX, 0.75, (16, 255, 16), 2
+            (10, 250), cv2.FONT_HERSHEY_SIMPLEX, 0.75, (64, 64, 255), 2
         )
 
     output_window = "Estimated Heart Rates"
     cv2.namedWindow(output_window, cv2.WINDOW_NORMAL)
     cv2.resizeWindow(output_window, 960, 540)
+    cv2.setWindowProperty(output_window, cv2.WND_PROP_TOPMOST, 1)
     cv2.imshow(output_window, frame_o)
 
     if frm_o_count == frame_num - 1:

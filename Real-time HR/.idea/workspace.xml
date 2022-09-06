@@ -7,23 +7,23 @@
     <list default="true" id="3ed74881-b1dd-4e50-9fbb-4a606982faf4" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/../HR Model Training (CUDA)/HR Model (CUDA).py" beforeDir="false" afterPath="$PROJECT_DIR$/../HR Model Training (CUDA)/HR Model (CUDA).py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../Model Analysis/Model Loss Plot.py" beforeDir="false" afterPath="$PROJECT_DIR$/../Model Analysis/Model Loss Plot.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Model Analysis/Model Test (CUDA).py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Model Analysis/Model Test Result Analysis.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Model Analysis/model_loss/model_eval_loss_cuda_1661966819.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Model Analysis/model_loss/model_eval_loss_cuda_1662028458.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Model Analysis/model_loss/model_eval_loss_cuda_1662080288.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Model Analysis/model_loss/model_loss_cuda_1661906413.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Model Analysis/model_loss/model_loss_cuda_1661966819.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Model Analysis/model_loss/model_loss_cuda_1662028458.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Model Analysis/model_loss/model_loss_cuda_1662080288.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Model Analysis/model_loss/model_loss_cuda_1662082193.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Model Analysis/model_loss/model_loss_hr_cuda_1662028458.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Model Analysis/model_loss/model_loss_hr_cuda_1662080288.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Model Analysis/model_loss/model_loss_hr_cuda_1662082193.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Model Analysis/model_test_results/model_test_cuda_1661906413.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Model Analysis/model_loss/eval_loss/model_eval_loss_cuda_1662028458.txt" beforeDir="false" afterPath="$PROJECT_DIR$/../Model Analysis/model_loss/eval_loss/model_eval_loss_cuda_1662028458.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Model Analysis/model_loss/eval_loss/model_eval_loss_cuda_1662170218.txt" beforeDir="false" afterPath="$PROJECT_DIR$/../Model Analysis/model_loss/eval_loss/model_eval_loss_cuda_1662170218.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Model Analysis/model_loss/loss/model_loss_cuda_1662028458.txt" beforeDir="false" afterPath="$PROJECT_DIR$/../Model Analysis/model_loss/loss/model_loss_cuda_1662028458.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Model Analysis/model_loss/loss/model_loss_cuda_1662082193.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Model Analysis/model_loss/loss/model_loss_cuda_1662124367.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Model Analysis/model_loss/loss/model_loss_cuda_1662170218.txt" beforeDir="false" afterPath="$PROJECT_DIR$/../Model Analysis/model_loss/loss/model_loss_cuda_1662170218.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Model Analysis/model_loss/loss_hr/model_loss_hr_cuda_1662028458.txt" beforeDir="false" afterPath="$PROJECT_DIR$/../Model Analysis/model_loss/loss_hr/model_loss_hr_cuda_1662028458.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Model Analysis/model_loss/loss_hr/model_loss_hr_cuda_1662082193.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Model Analysis/model_loss/loss_hr/model_loss_hr_cuda_1662124367.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Model Analysis/model_loss/loss_hr/model_loss_hr_cuda_1662170218.txt" beforeDir="false" afterPath="$PROJECT_DIR$/../Model Analysis/model_loss/loss_hr/model_loss_hr_cuda_1662170218.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/HR_models/hr_model_cuda_1662080288.pt" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/Real-time HR Estimation.py" beforeDir="false" afterPath="$PROJECT_DIR$/Real-time HR Estimation.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Widgets/Ground Truth HR Verifier.py" beforeDir="false" afterPath="$PROJECT_DIR$/../Widgets/Choosing STmaps by GT-HR Time Length.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Widgets/STmap (Lite) Directory Reorganizer.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Widgets/STmap Directory Reorganizer.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Widgets/STmap Verifier.py" beforeDir="false" afterPath="$PROJECT_DIR$/../Widgets/STmap Numbers Count.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Widgets/Training and Evaluation Datasets Divider.py" beforeDir="false" afterPath="$PROJECT_DIR$/../Widgets/STmap 5665 Directory Reorganizer.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
